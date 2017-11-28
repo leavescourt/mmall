@@ -1,13 +1,11 @@
 package com.emall.dao;
 
+import com.emall.common.ResultEnum;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by Administrator on 2017/11/27 0027.
@@ -45,6 +43,8 @@ public class UserMapperTest {
 
     @Test
     public void testUpdateByPrimaryKey() throws Exception {
+        ResultEnum resultEnum=ResultEnum.stateOf(1);
+        System.out.println(resultEnum.getMsg());
 
     }
 }
